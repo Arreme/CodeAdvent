@@ -18,7 +18,7 @@ fn main() {
         }
     }
 }
-
+//This Sorts the array
 fn sort(array: &mut Vec<u32>) {
     for i in 0..array.len() {
         for j in 0..array.len() - i - 1 {
@@ -28,7 +28,7 @@ fn sort(array: &mut Vec<u32>) {
         }
     }
 }
-
+//This makes it so it reads all the file inputted by the exercice.
 fn read_all<T: FromStr>(file_name: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
     std::fs::read_to_string(file_name)
         .expect("file not found!")
